@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navs and Tabs</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Create the navbar wrapper -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+      <!-- Create a responsive container -->
+      <div class="container-fluid">
+        <!-- Create the brand -->
+        <a class="navbar-brand" href="#">
+        <img src="images/image960*540.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+        Brand
+        </a>
+        <!-- Create the collapse plugin -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Create a wrapper to group and hide navbar contents by a parent breakpoint -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <!-- Create a wrapper for navigation items -->
+          <ul class="navbar-nav">
+            <!-- Create a active navigation item -->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Link</a>
+            </li>
+            <!-- Create a navigation dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">item1</a></li>
+                <li><a class="dropdown-item" href="#">item2</a></li>
+                <!-- <li><hr class="dropdown-divider"></li> -->
+                <li><a class="dropdown-item" href="#">item3</a></li>
+              </ul>
+            </li>
+            <!-- Create a disabled navigation item -->
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+</html>
